@@ -1,4 +1,4 @@
-# PYOTP - The Python One Time Password Library
+# PYOTP - The Python One Time Password Library - port to Python 3
 
 A Python library for generating one time passwords according to[ RFC 4226 ](http://tools.ietf.org/html/rfc4226) and the [ HOTP RFC ](http://tools.ietf.org/html/draft-mraihi-totp-timebased-00), ported from Mark Percival's [ ROTP ](https://github.com/mdp/rotp).
 
