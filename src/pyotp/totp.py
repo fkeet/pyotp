@@ -1,7 +1,7 @@
 from pyotp.otp import OTP
 import datetime
 import time
-import urllib
+import urllib.request, urllib.parse, urllib.error
 
 
 class TOTP(OTP):
@@ -49,7 +49,7 @@ class TOTP(OTP):
         @return [String] provisioning uri
         """
         return 'otpauth://totp/%(name)s?secret=%(secret)s' % {
-            'name': urllib.quote(name, safe='@'),
+            'name': urllib.parse.quote(name, safe='@'),
             'secret': self.secret,
         }
 
